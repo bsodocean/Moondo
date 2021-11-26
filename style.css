@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.mcontainer {
+    position: relative;
+    right: 200px;
+}
+
+
+.moon {
+    width: 300px;   
+    height: 300px;
+    margin-top: 12%;
+    margin-left: 37%;
+    border-radius: 50%;
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+    animation-name: moonshine;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+ h1 {
+    color:black;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+}
+
+header {
+    position: relative;
+    border-radius: 0.5rem;
+    bottom: 350px;
+    left: 1200px;   
+    background-color: white;
+    height: 450px;
+    width: 600px;
+    animation-name: moonUI;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    /*box-shadow: 0 0 10px 10px white;*/
+}
+
+#new-task-input {
+    color: white;
+}
+
+
+.containssvg {
+    position: relative;
+    bottom: 55px;
+    font-size: 35px;
+    cursor: none;
+    user-select: none; 
+}
+
+path {
+    fill: transparent;
+  }
+  
+  text {
+    fill:white;
+  }
+
+  input, button {
+    appearance: none;
+    outline: none;
+    background: none;
+    border-style: none;
+}
+
+#new-task-form {
+    display: flex;
+    padding: 1rem;
+}
+
+#new-task-input {
+    flex: 0.9 0.9 0%;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-left: 5px;
+    background-color: black;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#new-task-input::placeholder {
+    color: white;
+}
+
+
+#new-task-submit {
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+    color: black;
+    margin-left: 0.5rem;
+    font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: 1s;
+}
+
+#new-task-submit:hover {
+    background-image: linear-gradient(to right, #000000 0%, #7f8c8d 74%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    background-clip: flex;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+/*.task-list {
+    position: relative;
+    bottom: 680px;
+    left: 210px; 
+}*/
+
+ #tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: black;
+	padding: 1rem;
+    width: 95%;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+    margin: 1rem;
+    margin-left: 1rem;
+    user-select: none;
+}
+
+tasks {
+    display: flex;
+    width: max-content;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+    margin-left: 200px;
+    user-select: none;
+}
+
+.edit, .delete {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    margin-left: 10px;
+}
+
+.edit:hover, .delete:hover {
+    background-image: linear-gradient(to right, #000000 0%, #ffffff 74%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    background-clip: flex;
+}
+
+h2 {
+    margin-left: 1.5rem;
+}
+
+
+ .task .content {
+    flex: 1 1 0%;
+}
+
+
+.task .content .text {
+    display: block;
+    color: white;
+    font-weight: 500;
+    font-family: 'Source Code Pro', monospace;
+    width: 100%;
+}
+
+
+ @keyframes moonshine {
+    0%  {box-shadow: 0 0 5px  white;}
+    10% {box-shadow: 0 0 10px white;}
+    20% {box-shadow: 0 0 15px white;}
+    30% {box-shadow: 0 0 20px white;}
+    40% {box-shadow: 0 0 25px white;}
+    50% {box-shadow: 0 0 30px white;}
+    54% {box-shadow: 0 0 45px white;}
+ }
+
+ @keyframes moonUI {
+     10% {box-shadow: 0 0 2px 2px white;}
+    /* 20% {box-shadow: 0 0 4px 4px white;}*/
+     30% {box-shadow: 0 0 6px 6px white;}
+     /*40% {box-shadow: 0 0 8px 8px white;}*/
+     50% {box-shadow: 0 0 10px 10px white;}
+ }
+
+ /*.edit, .delete {
+     display: flex;
+     justify-content: space-around;
+ }*/
